@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTiny">10dp</dimen>
+    <dimen name="marginSmall">16dp</dimen>
+    <dimen name="marginMedium">32dp</dimen>
+    <dimen name="marginLarge">34dp</dimen>
+    <dimen name="saveButtonWidth">300dp</dimen>
+    <dimen name="textSizeLarge">28sp</dimen>
+</resources>

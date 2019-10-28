@@ -25,6 +25,7 @@
             android:contentDescription="@string/first_name_hint"/>
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -41,6 +42,7 @@
         android:layout_marginTop="32dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
@@ -65,6 +67,7 @@
             android:contentDescription="@string/phone_hint"/>
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -89,6 +92,7 @@
             android:contentDescription="@string/email_hint" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -113,6 +117,7 @@
             android:contentDescription="@string/address_hint" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -137,6 +142,7 @@
             android:contentDescription="@string/website_hint" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/web"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -146,7 +152,7 @@
 
     </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/save_button_label"
@@ -154,6 +160,7 @@
         android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/colorBlue"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:onClick="onSaveButtonClicked"/>
 
 </LinearLayout>

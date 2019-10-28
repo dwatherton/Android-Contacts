@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_outline_black_250dp"
+            android:tint="@color/colorDarkGray"
+            android:scaleType="centerInside"
+            android:background="@color/colorLightGray"
+            android:contentDescription="@string/first_name_hint" />
+
+        <TextView
+            android:id="@+id/contact_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="28sp"
+            android:padding="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_phone_black_24dp"
+                    android:text="@string/call_button_label"
+                    android:drawableTint="@color/colorBlue"
+                    android:textColor="@color/colorBlue"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="onCallButtonClicked" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_textsms_black_24dp"
+                    android:text="@string/text_button_label"
+                    android:drawableTint="@color/colorBlue"
+                    android:textColor="@color/colorBlue"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="onTextButtonClicked" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_email_black_24dp"
+                    android:text="@string/email_button_label"
+                    android:drawableTint="@color/colorBlue"
+                    android:textColor="@color/colorBlue"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="onEmailButtonClicked" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_directions_black_24dp"
+                    android:text="@string/directions_button_label"
+                    android:drawableTint="@color/colorBlue"
+                    android:textColor="@color/colorBlue"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="onMapButtonClicked" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_public_black_24dp"
+                    android:text="@string/web_button_label"
+                    android:drawableTint="@color/colorBlue"
+                    android:textColor="@color/colorBlue"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="onWebButtonClicked" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:tint="@color/colorDarkGray"
+                    android:contentDescription="@string/phone_hint"/>
+
+                <TextView
+                    android:id="@+id/contact_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:tint="@color/colorDarkGray"
+                    android:contentDescription="@string/email_hint" />
+
+                <TextView
+                    android:id="@+id/contact_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:tint="@color/colorDarkGray"
+                    android:contentDescription="@string/address_hint" />
+
+                <TextView
+                    android:id="@+id/contact_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_public_black_24dp"
+                    android:tint="@color/colorDarkGray"
+                    android:contentDescription="@string/website_hint" />
+
+                <TextView
+                    android:id="@+id/contact_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

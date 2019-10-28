@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
-    android:layout_marginStart="32dp"
-    android:layout_marginEnd="32dp"
+    android:layout_marginStart="@dimen/marginMedium"
+    android:layout_marginEnd="@dimen/marginMedium"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/first_name_hint"
             android:src="@drawable/ic_person_outline_black_24dp"
-            android:tint="@color/colorDarkGray"
-            android:contentDescription="@string/first_name_hint"/>
+            android:tint="@color/colorDarkGray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/marginTiny"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/first_name_hint"
-            android:drawablePadding="10dp"
             android:inputType="textPersonName" />
 
     </LinearLayout>
@@ -38,16 +37,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
+            android:layout_marginStart="@dimen/marginLarge"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/last_name_hint"
-            android:drawablePadding="10dp"
             android:inputType="textPersonName" />
 
     </LinearLayout>
@@ -55,24 +54,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/phone_hint"
             android:src="@drawable/ic_phone_black_24dp"
-            android:tint="@color/colorDarkGray"
-            android:contentDescription="@string/phone_hint"/>
+            android:tint="@color/colorDarkGray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/marginTiny"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/phone_hint"
-            android:drawablePadding="10dp"
             android:inputType="phone" />
 
     </LinearLayout>
@@ -80,24 +79,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/email_hint"
             android:src="@drawable/ic_email_black_24dp"
-            android:tint="@color/colorDarkGray"
-            android:contentDescription="@string/email_hint" />
+            android:tint="@color/colorDarkGray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/marginTiny"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/email_hint"
-            android:drawablePadding="10dp"
             android:inputType="textEmailAddress" />
 
     </LinearLayout>
@@ -105,24 +104,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/address_hint"
             android:src="@drawable/ic_location_on_black_24dp"
-            android:tint="@color/colorDarkGray"
-            android:contentDescription="@string/address_hint" />
+            android:tint="@color/colorDarkGray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/marginTiny"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/address_hint"
-            android:drawablePadding="10dp"
             android:inputType="textPostalAddress" />
 
     </LinearLayout>
@@ -130,37 +129,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="@dimen/marginMedium"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/website_hint"
             android:src="@drawable/ic_public_black_24dp"
-            android:tint="@color/colorDarkGray"
-            android:contentDescription="@string/website_hint" />
+            android:tint="@color/colorDarkGray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/web"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/marginTiny"
+            android:drawablePadding="@dimen/marginTiny"
             android:hint="@string/website_hint"
-            android:drawablePadding="10dp"
             android:inputType="textWebEditText" />
 
     </LinearLayout>
 
     <Button
-        android:layout_width="300dp"
+        android:layout_width="@dimen/saveButtonWidth"
         android:layout_height="wrap_content"
-        android:text="@string/save_button_label"
-        android:textColor="@color/colorPrimary"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:layout_marginBottom="@dimen/marginMedium"
         android:backgroundTint="@color/colorBlue"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:onClick="onSaveButtonClicked"/>
+        android:onClick="onSaveButtonClicked"
+        android:text="@string/save_button_label"
+        android:textColor="@color/colorPrimary" />
 
 </LinearLayout>

@@ -1,11 +1,11 @@
 package com.ualr.androidcontacts;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onSaveButtonClicked(View view)
-    {
+    public void onSaveButtonClicked(View view) {
         // Create The ViewContact Intent
         Intent intent = new Intent(this, ViewContact.class);
 
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText web = findViewById(R.id.web);
         Editable webAddress = web.getText();
         intent.putExtra(EXTRA_WEB, webAddress.toString());
-
 
         // Start The Contact View Activity With The Current Intent
         startActivity(intent);

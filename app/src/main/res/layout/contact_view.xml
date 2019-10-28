@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,23 +11,23 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_person_outline_black_250dp"
-            android:tint="@color/colorDarkGray"
-            android:scaleType="centerInside"
             android:background="@color/colorLightGray"
-            android:contentDescription="@string/first_name_hint" />
+            android:contentDescription="@string/first_name_hint"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_person_outline_black_250dp"
+            android:tint="@color/colorDarkGray" />
 
         <TextView
             android:id="@+id/contact_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/marginTiny"
             android:textColor="@color/colorDarkGray"
-            android:textSize="28sp"
-            android:padding="10dp"/>
+            android:textSize="@dimen/textSizeLarge" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -37,52 +37,52 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
                     android:drawableTop="@drawable/ic_phone_black_24dp"
+                    android:drawableTint="@color/colorBlue"
+                    android:onClick="onCallButtonClicked"
                     android:text="@string/call_button_label"
-                    android:drawableTint="@color/colorBlue"
-                    android:textColor="@color/colorBlue"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:onClick="onCallButtonClicked" />
+                    android:textColor="@color/colorBlue" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
                     android:drawableTop="@drawable/ic_textsms_black_24dp"
+                    android:drawableTint="@color/colorBlue"
+                    android:onClick="onTextButtonClicked"
                     android:text="@string/text_button_label"
-                    android:drawableTint="@color/colorBlue"
-                    android:textColor="@color/colorBlue"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:onClick="onTextButtonClicked" />
+                    android:textColor="@color/colorBlue" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
                     android:drawableTop="@drawable/ic_email_black_24dp"
+                    android:drawableTint="@color/colorBlue"
+                    android:onClick="onEmailButtonClicked"
                     android:text="@string/email_button_label"
-                    android:drawableTint="@color/colorBlue"
-                    android:textColor="@color/colorBlue"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:onClick="onEmailButtonClicked" />
+                    android:textColor="@color/colorBlue" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
                     android:drawableTop="@drawable/ic_directions_black_24dp"
-                    android:text="@string/directions_button_label"
                     android:drawableTint="@color/colorBlue"
-                    android:textColor="@color/colorBlue"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:onClick="onMapButtonClicked" />
+                    android:onClick="onMapButtonClicked"
+                    android:text="@string/directions_button_label"
+                    android:textColor="@color/colorBlue" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/ic_public_black_24dp"
-                    android:text="@string/web_button_label"
-                    android:drawableTint="@color/colorBlue"
-                    android:textColor="@color/colorBlue"
                     android:backgroundTint="@color/colorPrimary"
-                    android:onClick="onWebButtonClicked" />
+                    android:drawableTop="@drawable/ic_public_black_24dp"
+                    android:drawableTint="@color/colorBlue"
+                    android:onClick="onWebButtonClicked"
+                    android:text="@string/web_button_label"
+                    android:textColor="@color/colorBlue" />
 
             </LinearLayout>
 
@@ -91,100 +91,100 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp">
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="32dp">
+                android:layout_marginTop="@dimen/marginMedium"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/phone_hint"
                     android:src="@drawable/ic_phone_black_24dp"
-                    android:tint="@color/colorDarkGray"
-                    android:contentDescription="@string/phone_hint"/>
+                    android:tint="@color/colorDarkGray" />
 
                 <TextView
                     android:id="@+id/contact_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorDarkGray"
-                    android:layout_marginStart="16dp"/>
+                    android:layout_marginStart="@dimen/marginSmall"
+                    android:textColor="@color/colorDarkGray" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="32dp">
+                android:layout_marginTop="@dimen/marginMedium"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/email_hint"
                     android:src="@drawable/ic_email_black_24dp"
-                    android:tint="@color/colorDarkGray"
-                    android:contentDescription="@string/email_hint" />
+                    android:tint="@color/colorDarkGray" />
 
                 <TextView
                     android:id="@+id/contact_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorDarkGray"
-                    android:layout_marginStart="16dp"/>
+                    android:layout_marginStart="@dimen/marginSmall"
+                    android:textColor="@color/colorDarkGray" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="32dp">
+                android:layout_marginTop="@dimen/marginMedium"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/address_hint"
                     android:src="@drawable/ic_location_on_black_24dp"
-                    android:tint="@color/colorDarkGray"
-                    android:contentDescription="@string/address_hint" />
+                    android:tint="@color/colorDarkGray" />
 
                 <TextView
                     android:id="@+id/contact_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorDarkGray"
-                    android:layout_marginStart="16dp"/>
+                    android:layout_marginStart="@dimen/marginSmall"
+                    android:textColor="@color/colorDarkGray" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="16dp">
+                android:layout_marginTop="@dimen/marginMedium"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/website_hint"
                     android:src="@drawable/ic_public_black_24dp"
-                    android:tint="@color/colorDarkGray"
-                    android:contentDescription="@string/website_hint" />
+                    android:tint="@color/colorDarkGray" />
 
                 <TextView
                     android:id="@+id/contact_web"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorDarkGray"
-                    android:layout_marginStart="16dp"/>
+                    android:layout_marginStart="@dimen/marginSmall"
+                    android:textColor="@color/colorDarkGray" />
 
             </LinearLayout>
 
